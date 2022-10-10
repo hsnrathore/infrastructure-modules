@@ -38,3 +38,15 @@ variable "subnets" {
   type        = list(any)
   description = "List of Subnets to use for ECS"
 }
+variable "task_memory" {
+  type        = number
+  description = "Memory of Taks/Container in MiB"
+}
+variable "task_cpu" {
+  type        = number
+  description = "Numbr of CPU units"
+}
+variable "desired_count" {
+  type        = number
+  description = "Numbr of tasks in a service"
+}

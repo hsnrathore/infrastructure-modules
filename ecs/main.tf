@@ -10,20 +10,20 @@ resource "aws_ecs_task_definition" "main" {
   family                   = "service-${var.environment}"
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
-  cpu                      = 512
-  memory                   = 1024
+  cpu                      = var.task_cpu
+  memory                   = var.task_memory
   task_role_arn            = var.ecs_task_role
   execution_role_arn       = var.ecs_task_execution_role
   container_definitions = jsonencode([
     {
       name      = "${var.app_name}-container-${var.environment}"
       image     = "${var.container_image}:latest"
-      cpu       = 512
-      memory    = 1024
+      cpu       = var.task_cpu
+      memory    = var.task_memory
       essential = true
       portMappings = [
         {
-          containerPort = 80
+          containerPort = var.container_port
           hostPort      = 80
         }
       ]
@@ -40,7 +40,7 @@ resource "aws_ecs_service" "main" {
   name                               = "${var.app_name}-service-${var.environment}"
   cluster                            = aws_ecs_cluster.main.id
   task_definition                    = aws_ecs_task_definition.main.arn
-  desired_count                      = 2
+  desired_count                      = var.desired_count
   deployment_minimum_healthy_percent = 50
   deployment_maximum_percent         = 200
   launch_type                        = "FARGATE"
