@@ -31,7 +31,7 @@ resource "aws_ecs_task_definition" "main" {
                 logDriver = "awslogs"
                 options = {
                     awslogs-region = "us-east-1"
-                    awslogs-group = aws_cloudwatch_log_group.ecslogs.arn
+                    awslogs-group = aws_cloudwatch_log_group.ecslogs.name
                     awslogs-stream-prefix = var.environment
                 }
             }
