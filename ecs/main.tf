@@ -27,6 +27,14 @@ resource "aws_ecs_task_definition" "main" {
           hostPort      = 80
         }
       ]
+      logConfiguration = {
+                logDriver = awslogs
+                options = {
+                    awslogs-region = us-east-1
+                    awslogs-group = stream-to-log-nginx
+                    awslogs-stream-prefix = project
+                }
+            }
     }
   ])
   tags = {
