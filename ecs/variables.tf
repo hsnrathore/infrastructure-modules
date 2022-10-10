@@ -27,7 +27,7 @@ variable "container_image" {
   description = "URL for Docker Image"
 }
 variable "container_port" {
-  type        = string
+  type        = number
   description = "Port on the container to associate with the load balancer"
 }
 variable "aws_alb_target_group_arn" {
