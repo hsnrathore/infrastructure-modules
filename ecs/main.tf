@@ -28,7 +28,7 @@ resource "aws_ecs_task_definition" "main" {
         }
       ]
       logConfiguration = {
-                logDriver = awslogs
+                logDriver = "awslogs"
                 options = {
                     awslogs-region = "us-east-1"
                     awslogs-group = "stream-to-log-nginx"
