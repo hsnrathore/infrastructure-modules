@@ -1,0 +1,87 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            bf:74:c9:df:2d:54:b1:bb:d6:3b:75:b8:db:63:6a:2d
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=planaecsdemo.com
+        Validity
+            Not Before: Oct  9 22:56:16 2022 GMT
+            Not After : Jan 11 22:56:16 2025 GMT
+        Subject: CN=planaecsdemo.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:f5:ad:80:6e:87:ef:0f:eb:73:c0:bb:d7:ed:a8:
+                    69:e9:22:23:ac:41:cc:5a:78:7e:bc:a4:a3:2a:3a:
+                    73:28:f7:3f:6e:fd:51:3f:72:b1:8a:3c:51:13:e8:
+                    5c:92:06:c7:2d:ac:90:6d:5b:f1:b4:31:1f:fe:20:
+                    6e:8a:29:67:fa:23:c7:d6:e5:be:cb:5d:94:76:c2:
+                    79:fd:ca:b3:85:32:5c:ab:c9:17:2a:21:8b:ce:e0:
+                    d3:09:bd:6a:c9:8e:ae:4d:0d:08:f3:97:ed:90:2c:
+                    79:08:d5:dc:2d:ac:d9:aa:9f:45:11:9d:12:b7:3f:
+                    25:b2:2c:43:74:06:7d:06:6a:83:61:83:d2:3d:5c:
+                    5b:73:a6:86:99:a2:1d:e2:1f:06:47:65:d6:7c:9b:
+                    d3:18:71:8b:3f:47:78:fe:1d:32:e9:7b:b1:d5:78:
+                    5f:fa:65:15:87:7d:30:d3:77:66:96:1f:0c:44:a1:
+                    b8:a4:ac:e1:cf:31:95:f6:b4:e9:dc:ed:0c:d6:e6:
+                    67:f8:15:c7:a2:e5:f9:42:ce:6f:cf:16:e9:92:b8:
+                    7b:2c:e1:75:14:ef:65:47:90:3e:09:a2:9a:ac:4b:
+                    8f:30:3e:6c:ba:a2:e3:86:e7:ba:24:3f:42:df:90:
+                    89:09:5c:b5:3f:1f:6f:5a:9c:f5:34:1c:6d:e8:b5:
+                    0b:b9
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                F5:7E:4E:B4:EF:6D:67:0E:B4:85:5D:BB:24:33:35:B9:DD:28:4D:86
+            X509v3 Authority Key Identifier: 
+                keyid:86:19:4E:1C:D8:A5:A8:17:BF:2A:D5:DC:DD:98:59:76:CC:95:0F:A3
+                DirName:/CN=planaecsdemo.com
+                serial:72:EF:56:9F:C8:CA:D2:37:AB:C4:C4:FE:BA:AC:AC:46:3F:F4:70:6C
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:planaecsdemo.com
+    Signature Algorithm: sha256WithRSAEncryption
+         96:46:ec:fb:0b:e2:7a:9d:54:45:49:5a:d2:6a:a5:ab:bc:4c:
+         11:af:32:ce:f6:c3:b2:d1:76:26:25:1f:6e:c2:80:40:19:53:
+         8c:1c:30:5c:7f:da:11:de:ea:fa:a7:e4:83:77:6e:41:fc:20:
+         70:8a:3e:f4:3d:37:32:f7:94:bd:19:1b:db:a2:67:c5:05:18:
+         51:28:07:7f:ef:88:a4:de:fa:27:6f:67:21:14:a5:4d:b2:c0:
+         f2:44:3b:d7:23:af:1c:24:86:9e:72:98:e9:31:aa:70:a0:aa:
+         9d:ec:26:c4:d9:8e:0f:48:64:4f:de:4e:aa:b0:db:7e:26:9f:
+         6c:0a:20:80:95:b1:ea:51:d8:3f:03:d1:5d:5b:a2:8e:36:cb:
+         2c:53:97:48:c1:9c:0d:46:d5:69:2e:dc:20:8d:b9:0e:19:0c:
+         2c:6b:92:ad:36:71:e5:9e:25:c8:e6:b0:97:01:a3:1f:99:37:
+         af:45:7f:76:f9:17:ae:7f:3a:67:b8:28:7a:19:de:81:62:77:
+         c9:e2:27:5b:e1:0f:48:bf:fb:04:dd:25:1b:39:39:8d:e1:9c:
+         d6:da:ce:c0:0a:fc:34:6e:6e:98:15:e5:9a:ed:34:1e:77:56:
+         ce:3f:88:6c:8f:7f:6b:b2:cf:25:41:35:13:f6:7f:54:4e:d0:
+         37:e8:3f:09
+-----BEGIN CERTIFICATE-----
+MIIDhjCCAm6gAwIBAgIRAL90yd8tVLG71jt1uNtjai0wDQYJKoZIhvcNAQELBQAw
+GzEZMBcGA1UEAwwQcGxhbmFlY3NkZW1vLmNvbTAeFw0yMjEwMDkyMjU2MTZaFw0y
+NTAxMTEyMjU2MTZaMBsxGTAXBgNVBAMMEHBsYW5hZWNzZGVtby5jb20wggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQD1rYBuh+8P63PAu9ftqGnpIiOsQcxa
+eH68pKMqOnMo9z9u/VE/crGKPFET6FySBsctrJBtW/G0MR/+IG6KKWf6I8fW5b7L
+XZR2wnn9yrOFMlyryRcqIYvO4NMJvWrJjq5NDQjzl+2QLHkI1dwtrNmqn0URnRK3
+PyWyLEN0Bn0GaoNhg9I9XFtzpoaZoh3iHwZHZdZ8m9MYcYs/R3j+HTLpe7HVeF/6
+ZRWHfTDTd2aWHwxEobikrOHPMZX2tOnc7QzW5mf4Fcei5flCzm/PFumSuHss4XUU
+72VHkD4JopqsS48wPmy6ouOG57okP0LfkIkJXLU/H29anPU0HG3otQu5AgMBAAGj
+gcQwgcEwCQYDVR0TBAIwADAdBgNVHQ4EFgQU9X5OtO9tZw60hV27JDM1ud0oTYYw
+VgYDVR0jBE8wTYAUhhlOHNilqBe/KtXc3ZhZdsyVD6OhH6QdMBsxGTAXBgNVBAMM
+EHBsYW5hZWNzZGVtby5jb22CFHLvVp/IytI3q8TE/rqsrEY/9HBsMBMGA1UdJQQM
+MAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIFoDAbBgNVHREEFDASghBwbGFuYWVjc2Rl
+bW8uY29tMA0GCSqGSIb3DQEBCwUAA4IBAQCWRuz7C+J6nVRFSVrSaqWrvEwRrzLO
+9sOy0XYmJR9uwoBAGVOMHDBcf9oR3ur6p+SDd25B/CBwij70PTcy95S9GRvbomfF
+BRhRKAd/74ik3vonb2chFKVNssDyRDvXI68cJIaecpjpMapwoKqd7CbE2Y4PSGRP
+3k6qsNt+Jp9sCiCAlbHqUdg/A9FdW6KONsssU5dIwZwNRtVpLtwgjbkOGQwsa5Kt
+NnHlniXI5rCXAaMfmTevRX92+ReufzpnuCh6Gd6BYnfJ4idb4Q9Iv/sE3SUbOTmN
+4ZzW2s7ACvw0bm6YFeWa7TQed1bOP4hsj39rss8lQTUT9n9UTtA36D8J
+-----END CERTIFICATE-----
