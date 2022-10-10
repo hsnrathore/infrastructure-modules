@@ -31,8 +31,8 @@ resource "aws_ecs_task_definition" "main" {
                 logDriver = "awslogs"
                 options = {
                     awslogs-region = "us-east-1"
-                    awslogs-group = "stream-to-log-nginx"
-                    awslogs-stream-prefix = "project"
+                    awslogs-group = aws_cloudwatch_log_group.ecslogs.arn
+                    awslogs-stream-prefix = var.environment
                 }
             }
     }
@@ -43,6 +43,14 @@ resource "aws_ecs_task_definition" "main" {
   }
 }
 
+resource "aws_cloudwatch_log_group" "ecslogs" {
+  name = "stream-to-log-ecs-${var.environment}"
+
+  tags = {
+    Terraform   = "true"
+    Environment = "${var.environment}"
+  }
+}
 
 resource "aws_ecs_service" "main" {
   name                               = "${var.app_name}-service-${var.environment}"
